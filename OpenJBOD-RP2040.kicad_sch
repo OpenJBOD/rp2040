@@ -5601,10 +5601,6 @@
 		(uuid "42507f5b-4d97-4e8b-a44b-744c3b6fc2bc")
 	)
 	(no_connect
-		(at 96.52 116.84)
-		(uuid "45d38271-6b06-48d5-9fcf-6083c86b4f9f")
-	)
-	(no_connect
 		(at 247.65 35.56)
 		(uuid "4d1d3d07-fadd-4848-9ae6-ab04e3dfc077")
 	)
@@ -5623,10 +5619,6 @@
 	(no_connect
 		(at 278.13 55.88)
 		(uuid "539b9fdb-0d5f-43a6-83ba-34a12eb7b10d")
-	)
-	(no_connect
-		(at 96.52 119.38)
-		(uuid "615f00bc-4de1-4ecf-9f02-68caabc33347")
 	)
 	(no_connect
 		(at 96.52 124.46)
@@ -5731,6 +5723,16 @@
 			(type default)
 		)
 		(uuid "01e8b810-f351-4312-926d-c5aeeb85973a")
+	)
+	(wire
+		(pts
+			(xy 96.52 119.38) (xy 113.03 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "043ce5c9-89e2-4faf-afcd-97da33d22b05")
 	)
 	(wire
 		(pts
@@ -5851,6 +5853,26 @@
 			(type default)
 		)
 		(uuid "15d8d09f-2eb3-4498-81f2-b30d7fe20b1b")
+	)
+	(wire
+		(pts
+			(xy 96.52 116.84) (xy 113.03 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "171a3f79-b733-42b3-81e0-66d88acc390d")
+	)
+	(wire
+		(pts
+			(xy 71.12 182.88) (xy 81.28 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1795568e-43da-4d09-ab2b-3ea9bcb90233")
 	)
 	(wire
 		(pts
@@ -6334,6 +6356,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 189.23) (xy 80.01 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5192b7fa-a3ad-4a64-94a8-b0228180c270")
+	)
+	(wire
+		(pts
 			(xy 231.14 135.89) (xy 243.84 135.89)
 		)
 		(stroke
@@ -6571,6 +6603,16 @@
 			(type default)
 		)
 		(uuid "70a2fc33-4667-4148-8154-6c8149549da0")
+	)
+	(wire
+		(pts
+			(xy 71.12 185.42) (xy 81.28 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70fe6049-a2be-48fb-95dd-93d0b9a6a2e7")
 	)
 	(wire
 		(pts
@@ -6841,6 +6883,16 @@
 			(type default)
 		)
 		(uuid "918de4f1-1b17-4ced-9922-740b31e5b377")
+	)
+	(wire
+		(pts
+			(xy 80.01 187.96) (xy 81.28 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9424c461-f7b7-462f-a5a3-14208b9a578b")
 	)
 	(wire
 		(pts
@@ -8010,6 +8062,17 @@
 		)
 		(uuid "125201b6-77dc-4630-8401-f87d046e6786")
 	)
+	(label "UART_RX"
+		(at 113.03 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "15e0abb6-8add-4368-a5a5-372943648a85")
+	)
 	(label "QSPI_SD2"
 		(at 210.82 82.55 0)
 		(fields_autoplaced yes)
@@ -8120,6 +8183,17 @@
 		)
 		(uuid "4970b745-ee6a-4f0f-8663-64707aca1cb2")
 	)
+	(label "UART_TX"
+		(at 113.03 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4c27056f-c306-4cd7-bee7-46f8f0b5372b")
+	)
 	(label "PS_ON#"
 		(at 185.42 25.4 0)
 		(fields_autoplaced yes)
@@ -8207,6 +8281,17 @@
 			(justify right bottom)
 		)
 		(uuid "5c283f39-afe5-455e-b1e4-7dfe2d06042d")
+	)
+	(label "UART_TX"
+		(at 71.12 182.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c6786a8-a42b-4976-9c16-ed136587c8a6")
 	)
 	(label "PWR_BTN"
 		(at 146.05 185.42 0)
@@ -8592,6 +8677,17 @@
 			(justify left bottom)
 		)
 		(uuid "c154f72c-b500-44b6-b187-e3e86d41abd5")
+	)
+	(label "UART_RX"
+		(at 71.12 185.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c51a4d0f-8dd7-49d2-b734-763c60292c20")
 	)
 	(label "+12v"
 		(at 116.84 118.11 0)
@@ -10581,6 +10677,71 @@
 			(project "OpenJBOD-RP2040"
 				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
 					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e6c5ddc-0195-4ba2-bdf1-542f6c2c5707")
+		(property "Reference" "#PWR062"
+			(at 80.01 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "143f7e18-4e09-48e5-8030-2a9e493ae5c8")
+		)
+		(instances
+			(project "OpenJBOD-RP2040"
+				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -13543,6 +13704,88 @@
 			(project "OpenJBOD-RP2040"
 				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 86.36 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "accf0e4d-066e-4936-9709-5116df6efa01")
+		(property "Reference" "J4"
+			(at 88.9 184.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "UART"
+			(at 88.9 186.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 86.36 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 86.36 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_PN" "C49257"
+			(at 86.36 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "36c07d0c-80c2-493b-a954-548684b46894")
+		)
+		(pin "1"
+			(uuid "2ec94b38-4d27-48c5-ad79-417c5d19a09c")
+		)
+		(pin "2"
+			(uuid "ee2f90d5-2442-4615-ad51-57d60bf5ed2d")
+		)
+		(instances
+			(project "OpenJBOD-RP2040"
+				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
+					(reference "J4")
 					(unit 1)
 				)
 			)
