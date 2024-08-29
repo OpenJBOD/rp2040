@@ -8,6 +8,8 @@
 *.kicad_prl
 *.sch-bak
 *~
+libs/
+
 _autosave-*
 *.tmp
 *-save.pro

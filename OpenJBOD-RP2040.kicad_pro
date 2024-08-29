@@ -535,7 +535,7 @@
       "plot": "plots/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "OpenJBOD-RP2040.step",
       "svg": "",
       "vrml": ""
     },

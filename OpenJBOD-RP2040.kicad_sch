@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "OpenJBOD Controller")
-		(date "2024-08-06")
+		(date "2024-08-21")
 		(rev "4")
 		(company "TheGuyDanish")
 	)
@@ -4922,6 +4922,349 @@
 				)
 			)
 		)
+		(symbol "Sensor_Temperature:DS18B20U"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "DS18B20U"
+				(at 6.35 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+				(at -24.13 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf"
+				(at -3.81 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Programmable Resolution 1-Wire Digital Thermometer MSOP-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "OneWire 1-Wire 1Wire Maxim Dallas"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MSOP*3x3mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DS18B20U_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -3.302 -2.54)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -2.667 -1.905)
+					(end -3.937 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -2.667 3.175)
+					(mid -3.302 3.8073)
+					(end -3.937 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 0.635) (xy -3.302 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 1.27) (xy -3.302 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 1.905) (xy -3.302 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 2.54) (xy -3.302 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 3.175) (xy -3.937 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 3.175) (xy -3.302 3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.667 3.175) (xy -2.667 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "DS18B20U_1_1"
+				(pin bidirectional line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DQ"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -5.08 2.54 0)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -5.08 0 0)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -5.08 -2.54 0)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 2.54 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 -2.54 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "V_{DD}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers hide)
 			(pin_names
@@ -5469,6 +5812,12 @@
 		(uuid "89ec7855-8086-4130-aeca-41b2505b5225")
 	)
 	(junction
+		(at 157.48 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91803aa2-1ce9-4873-b55f-7f40675906a1")
+	)
+	(junction
 		(at 86.36 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5557,6 +5906,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd43e9d6-33c9-4564-a9b4-891cd316f6ea")
+	)
+	(junction
+		(at 157.48 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd89a5d2-a7c2-4563-a3ba-eac30acdcf06")
 	)
 	(junction
 		(at 17.78 132.08)
@@ -5695,10 +6050,6 @@
 	(no_connect
 		(at 247.65 27.94)
 		(uuid "e213a13d-b1f2-49ce-9854-d655d706eb7f")
-	)
-	(no_connect
-		(at 96.52 121.92)
-		(uuid "e90a56cb-c252-4e81-a050-1770611f8481")
 	)
 	(no_connect
 		(at 247.65 25.4)
@@ -6176,6 +6527,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 138.43) (xy 166.37 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3866863a-e90a-4ec2-a8c4-c67a24eec6e3")
+	)
+	(wire
+		(pts
 			(xy 19.05 86.36) (xy 30.48 86.36)
 		)
 		(stroke
@@ -6193,6 +6554,16 @@
 			(type default)
 		)
 		(uuid "3c053b06-00bb-43a4-b9a9-2d76ffa3ae78")
+	)
+	(wire
+		(pts
+			(xy 157.48 146.05) (xy 157.48 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c85572b-2774-4189-ad4c-eefb3f1815a5")
 	)
 	(wire
 		(pts
@@ -6446,6 +6817,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 147.32) (xy 157.48 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "617554ed-9f6d-4ffd-95d4-688ffbd15cd8")
+	)
+	(wire
+		(pts
 			(xy 245.11 40.64) (xy 247.65 40.64)
 		)
 		(stroke
@@ -6493,6 +6874,16 @@
 			(type default)
 		)
 		(uuid "67d0deb9-7585-4113-aef0-42e107dc0a65")
+	)
+	(wire
+		(pts
+			(xy 157.48 138.43) (xy 166.37 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6871e63a-2e54-452d-92b1-cb2fc54aa5b1")
 	)
 	(wire
 		(pts
@@ -6843,6 +7234,16 @@
 			(type default)
 		)
 		(uuid "8a873e5e-7d0c-4dd3-a9f4-1ee62f684c3f")
+	)
+	(wire
+		(pts
+			(xy 166.37 154.94) (xy 166.37 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ca2e7bc-c003-428c-a21d-325c47887273")
 	)
 	(wire
 		(pts
@@ -7356,6 +7757,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 147.32) (xy 158.75 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c06e0cb5-8ab6-4ae2-968a-db17f47a48f1")
+	)
+	(wire
+		(pts
 			(xy 86.36 48.26) (xy 97.79 48.26)
 		)
 		(stroke
@@ -7383,6 +7794,16 @@
 			(type default)
 		)
 		(uuid "c2e51bd6-f8f9-40cd-b91f-89e0eab43131")
+	)
+	(wire
+		(pts
+			(xy 157.48 138.43) (xy 157.48 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2f21fe1-fadb-4f30-8c9e-af8bf61ee1e0")
 	)
 	(wire
 		(pts
@@ -7696,6 +8117,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 121.92) (xy 106.68 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2ce40a9-2b8d-4b82-942b-70d62b7d3e3b")
+	)
+	(wire
+		(pts
 			(xy 224.79 58.42) (xy 234.95 58.42)
 		)
 		(stroke
@@ -7886,6 +8317,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 138.43) (xy 157.48 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ec55ac-c5e9-40f0-a2cf-4bd9a3abe512")
+	)
+	(wire
+		(pts
 			(xy 143.51 19.05) (xy 156.21 19.05)
 		)
 		(stroke
@@ -8040,7 +8481,7 @@
 		)
 		(uuid "0f0e74fc-a133-4c46-b056-a736df03a9d4")
 	)
-	(label "T1_DATA"
+	(label "T2_DATA"
 		(at 106.68 104.14 180)
 		(fields_autoplaced yes)
 		(effects
@@ -8260,7 +8701,7 @@
 		)
 		(uuid "54f09bea-3be8-4bfb-a650-4c6ca930ce56")
 	)
-	(label "T1_DATA"
+	(label "T2_DATA"
 		(at 146.05 167.64 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8369,6 +8810,17 @@
 			(justify right bottom)
 		)
 		(uuid "6cce201d-06f5-49c6-8c9e-07541c612005")
+	)
+	(label "+3.3vSB"
+		(at 148.59 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6edf52fa-28f4-41b1-9905-6da9a4c6db00")
 	)
 	(label "+5v"
 		(at 231.14 33.02 180)
@@ -8513,6 +8965,17 @@
 		)
 		(uuid "a2ff47e5-f0b3-46d6-8e54-fe1ccab97acf")
 	)
+	(label "T1_DATA"
+		(at 106.68 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a43203c6-90e6-4906-8ffa-8e7ea427ff39")
+	)
 	(label "LOUT"
 		(at 96.52 182.88 0)
 		(fields_autoplaced yes)
@@ -8546,7 +9009,7 @@
 		)
 		(uuid "ac876c8b-a1e2-4705-a741-8f4b84d684ce")
 	)
-	(label "SPI0_CSN"
+	(label "SPI0_CSn"
 		(at 106.68 88.9 180)
 		(fields_autoplaced yes)
 		(effects
@@ -8600,6 +9063,17 @@
 			(justify left bottom)
 		)
 		(uuid "b05c02cd-5d5a-4b3d-8da8-b8e16e09a8cf")
+	)
+	(label "T1_DATA"
+		(at 148.59 147.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2697f7a-4a97-44ad-939c-7332106e579f")
 	)
 	(label "PSU_5vSB"
 		(at 231.14 35.56 180)
@@ -9214,6 +9688,71 @@
 			(project "OpenJBOD-RP2040"
 				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 166.37 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0dee2279-635d-49b7-8ed6-387e8571aea5")
+		(property "Reference" "#PWR063"
+			(at 166.37 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 166.37 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2626cfe1-5d94-47a5-8051-45d7bb449bf0")
+		)
+		(instances
+			(project "OpenJBOD-RP2040"
+				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -9927,6 +10466,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Sensor_Temperature:DS18B20U")
+		(at 166.37 147.32 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "256c9c14-7251-4bd4-b992-f5730b06122b")
+		(property "Reference" "U8"
+			(at 172.72 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DS18B20U"
+			(at 172.72 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 190.5 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf"
+			(at 170.18 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Programmable Resolution 1-Wire Digital Thermometer MSOP-8"
+			(at 166.37 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_PN" "C695836"
+			(at 166.37 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "50c4b9f9-5ec3-4a85-9937-7ff42119fd28")
+		)
+		(pin "6"
+			(uuid "15bd5bcd-4ab0-42ff-8ad6-72408ee361af")
+		)
+		(pin "8"
+			(uuid "f040ba65-79ac-40c3-9981-be9910baf16c")
+		)
+		(pin "1"
+			(uuid "6ef4b12c-4f3c-4ac2-a16a-55985dfc2331")
+		)
+		(pin "4"
+			(uuid "33834383-0efe-4464-9e10-62bfd4f0e7ba")
+		)
+		(pin "7"
+			(uuid "da0dec54-54e9-465b-a280-f8e682a51221")
+		)
+		(pin "5"
+			(uuid "a2826c3d-d543-40c2-aaa7-2a353e53d919")
+		)
+		(pin "2"
+			(uuid "96198817-7ddb-455d-85aa-c2b1b200660f")
+		)
+		(instances
+			(project "OpenJBOD-RP2040"
+				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:ATX-24")
 		(at 208.28 35.56 0)
 		(unit 1)
@@ -9937,7 +10574,7 @@
 		(fields_autoplaced yes)
 		(uuid "29d6c2d1-0d7c-460a-9493-953fada729a5")
 		(property "Reference" "J1"
-			(at 208.28 18.415 0)
+			(at 208.28 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9945,14 +10582,14 @@
 			)
 		)
 		(property "Value" "ATX-24"
-			(at 208.28 20.955 0)
+			(at 208.28 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5566-24A_2x12_P4.20mm_Vertical"
+		(property "Footprint" "OpenJBOD_Library:CONN-TH_M4202V-2X12P"
 			(at 208.28 38.1 0)
 			(effects
 				(font
@@ -11626,6 +12263,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AMS1117-3.3")
+		(at 85.09 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51eb9cc0-5c4a-437f-8bb5-cd0ab93bdc22")
+		(property "Reference" "U2"
+			(at 85.09 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-3.3"
+			(at 85.09 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 85.09 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 87.63 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 85.09 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ce69d046-2849-424a-adab-d4066af1af8e")
+		)
+		(pin "1"
+			(uuid "63bb8cbf-4e7b-4ce3-ad46-99de396bb5d1")
+		)
+		(pin "2"
+			(uuid "dbb2d90a-62c0-4ca1-b074-1cbdef6ffdef")
+		)
+		(instances
+			(project "OpenJBOD-RP2040"
+				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 224.79 62.23 0)
 		(unit 1)
@@ -11721,7 +12429,7 @@
 				)
 			)
 		)
-		(property "Value" "SS34"
+		(property "Value" "SS14"
 			(at 40.005 17.145 0)
 			(effects
 				(font
@@ -11841,86 +12549,6 @@
 			(project "OpenJBOD-RP2040"
 				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:AMS1117-3.3")
-		(at 85.09 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5a267605-96e1-4b09-bbe8-d7a62035e95b")
-		(property "Reference" "U2"
-			(at 85.09 13.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "UZ1085L-33"
-			(at 85.09 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-			(at 85.09 15.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-			(at 87.63 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 85.09 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB_PN" "C125622"
-			(at 85.09 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "29270656-b4f4-4d00-8ddb-48c7128dcca7")
-		)
-		(pin "1"
-			(uuid "28f0a1d6-49b4-4c4c-8447-4143d6744f87")
-		)
-		(pin "3"
-			(uuid "31e8b936-9705-46f5-9bcb-892efaf41bcf")
-		)
-		(instances
-			(project "OpenJBOD-RP2040"
-				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -14290,7 +14918,7 @@
 				)
 			)
 		)
-		(property "Value" "SS34"
+		(property "Value" "SS14"
 			(at 29.845 17.145 0)
 			(effects
 				(font
@@ -14812,6 +15440,82 @@
 			(project "OpenJBOD-RP2040"
 				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 157.48 143.51 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d800be2f-3f62-4fb6-bd28-8f2713af5792")
+		(property "Reference" "R31"
+			(at 155.448 140.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 160.02 140.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 157.48 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_PN" "C25900"
+			(at 157.48 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06f86ad9-b131-4724-b299-6c07e4121a81")
+		)
+		(pin "2"
+			(uuid "f41e937b-b873-4837-8e08-838729a26c86")
+		)
+		(instances
+			(project "OpenJBOD-RP2040"
+				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
+					(reference "R31")
 					(unit 1)
 				)
 			)
