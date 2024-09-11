@@ -356,7 +356,7 @@
 		(remove_unused_layers no)
 		(uuid "692ac664-0b5b-4d3a-8faf-9143da176bce")
 	)
-	(model "C:/Users/Oliver/Desktop/Kicad/OpenJBOD-RP2040/libs/easyeda/easyeda.3dshapes/CONN-TH_M4202V-2X12P.wrl"
+	(model "${KIPRJMOD}/OpenJBOD.3d/CONN-TH_M4202V-2X12P.step"
 		(offset
 			(xyz 0 0 5.5)
 		)
