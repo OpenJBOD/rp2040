@@ -1,0 +1,64 @@
+kibot:
+  version: 1
+
+preflight:
+  run_drc: false
+
+outputs:
+  - name: 'pdf-sch'
+    comment: "Export schematic to PDF"
+    type: 'pdf_sch_print'
+    options:
+      output: 'OpenJBOD-RP2040-SCH.pdf'
+  - name: 'bom'
+    comment: "Exporting BoM"
+    type: bom
+    options:
+      output: 'OpenJBOD-RP2040-BoM.csv'
+  - name: 'ibom'
+    comment: "Exporting HTML BoM"
+    type: ibom
+    options:
+      output: 'OpenJBOD-RP2040-BoM.html'
+      forced_name: "OpenJBOD-RP2040"
+  - name: 'drill'
+    comment: "Exporting drill files"
+    type: excellon
+    dir: plot
+    options:
+      route_mode_for_oval_holes: false
+  - name: 'gerbers'
+    comment: "Exporting gerbers"
+    type: gerber
+    dir: plot
+    options:
+      use_protel_extensions: true
+      subtract_mask_from_silk: true
+      plot_footprint_values: false
+    layers:
+      - 'Front'
+      - 'In1.Cu'
+      - 'In2.Cu'
+      - 'Back'
+      - 'F.Paste'
+      - 'B.Paste'
+      - 'F.Silkscreen'
+      - 'B.Silkscreen'
+      - 'F.Mask'
+      - 'B.Mask'
+      - 'Edge.Cuts'
+  - name: 'position'
+    comment: "Exporting pick and place files"
+    type: position
+    options:
+      format: 'CSV'
+      only_smd: false
+  - name: 'fab'
+    type: compress
+    options:
+      output: openjbod_rp2040_fabrication.zip
+      files:
+        - from_output: gerbers
+        - from_output: drill
+        - from_output: position
+        - from_output: bom

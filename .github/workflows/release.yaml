@@ -1,0 +1,69 @@
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: Run KiBot
+      uses: INTI-CMNB/KiBot@v2_k8
+      with:
+        config: .github/config.kibot.yaml
+        dir: output
+        schema: OpenJBOD-RP2040.kicad_sch
+        board: OpenJBOD-RP2040.kicad_pcb
+    - name: Create release
+      id: create_release
+      uses: actions/create-release@latest
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        draft: false
+        prerelease: false
+    - name: debug
+      run: "ls -al output"
+    - name: Upload Schematic PDF
+      id: upload_pdf
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./output/OpenJBOD-RP2040-SCH.pdf
+        asset_name: OpenJBOD-RP2040-SCH.pdf
+        asset_content_type: application/pdf
+    - name: Upload BoM
+      id: upload_bom
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./output/OpenJBOD-RP2040-BoM.csv
+        asset_name: OpenJBOD-RP2040-BoM.csv
+        asset_content_type: text/csv
+    - name: Upload iBoM
+      id: upload_ibom
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./output/OpenJBOD-RP2040-BoM.html
+        asset_name: OpenJBOD-RP2040-BoM.html
+        asset_content_type: text/html
+    - name: Upload Gerbers
+      id: upload_gerbers
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./output/openjbod_rp2040_fabrication.zip
+        asset_name: openjbod_rp2040_fabrication.zip
+        asset_content_type: application/zip
