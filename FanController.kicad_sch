@@ -2197,7 +2197,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_PN" "C110229"
+		(property "JLCPCB_PN" "C2836440"
 			(at 140.97 80.01 0)
 			(effects
 				(font
@@ -2439,7 +2439,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_PN" "C110229"
+		(property "JLCPCB_PN" "C2836440"
 			(at 140.97 60.96 0)
 			(effects
 				(font
@@ -3090,7 +3090,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_PN" "C110229"
+		(property "JLCPCB_PN" "C2836440"
 			(at 140.97 118.11 0)
 			(effects
 				(font
@@ -3169,7 +3169,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_PN" "C110229"
+		(property "JLCPCB_PN" "C2836440"
 			(at 140.97 43.18 0)
 			(effects
 				(font
@@ -3248,7 +3248,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_PN" "C110229"
+		(property "JLCPCB_PN" "C2836440"
 			(at 140.97 99.06 0)
 			(effects
 				(font
