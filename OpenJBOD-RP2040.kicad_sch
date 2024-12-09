@@ -13313,7 +13313,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OpenJBOD_Library:USB-C-SMD_TYPE-C16PIN"
 			(at 31.75 36.83 0)
 			(effects
 				(font
@@ -13401,7 +13401,7 @@
 			(uuid "87cf3c63-c1be-462f-b9c4-e5b21c79e7c0")
 		)
 		(instances
-			(project ""
+			(project "OpenJBOD-RP2040"
 				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
 					(reference "J5")
 					(unit 1)
@@ -14507,7 +14507,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 229.87 152.4 0)
 			(effects
 				(font
@@ -14575,7 +14575,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 48.26 29.21 0)
 			(effects
 				(font
@@ -14711,7 +14711,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 229.87 121.92 0)
 			(effects
 				(font
@@ -14745,7 +14745,7 @@
 			(uuid "13c8549b-feee-475e-810f-ebefad82830e")
 		)
 		(instances
-			(project ""
+			(project "OpenJBOD-RP2040"
 				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
 					(reference "R32")
 					(unit 1)
@@ -14778,7 +14778,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 48.26 26.67 0)
 			(effects
 				(font
@@ -14812,7 +14812,7 @@
 			(uuid "482642d2-938e-4863-8f25-af757cd7149e")
 		)
 		(instances
-			(project ""
+			(project "OpenJBOD-RP2040"
 				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
 					(reference "R36")
 					(unit 1)
@@ -16305,7 +16305,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 199.39 124.46 0)
 			(effects
 				(font
@@ -16538,7 +16538,7 @@
 			(uuid "96d1abe0-4f18-4cf5-b4f3-36f1c1b987fb")
 		)
 		(instances
-			(project ""
+			(project "OpenJBOD-RP2040"
 				(path "/341cb12b-c598-4bc6-a9bc-01f338de5a85"
 					(reference "#PWR064")
 					(unit 1)
@@ -16657,7 +16657,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 198.12 154.94 0)
 			(effects
 				(font
