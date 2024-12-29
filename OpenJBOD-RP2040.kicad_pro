@@ -84,6 +84,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -543,6 +544,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -677,12 +679,20 @@
       "Root"
     ],
     [
+      "df6b53b0-43e8-4e80-962d-303d725ddb5e",
+      "Power"
+    ],
+    [
+      "527295a7-0768-4547-b26c-4dc65b38c653",
+      "MCU"
+    ],
+    [
       "77844ad8-669e-44b5-b742-a09c7db27022",
       "W5500"
     ],
     [
       "92f09501-d0da-4e05-8416-59a9559126b6",
-      "Fan Controller"
+      "Environment"
     ]
   ],
   "text_variables": {}
