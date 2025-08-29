@@ -10,7 +10,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
     - name: Run KiBot
-      uses: INTI-CMNB/KiBot@v2_k8
+      uses: INTI-CMNB/KiBot@v2_k9
       with:
         config: .github/config.kibot.yaml
         dir: output
