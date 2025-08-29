@@ -16,6 +16,8 @@ _autosave-*
 *-save.kicad_pcb
 fp-info-cache
 plots/
+production/
+dfm/
 
 # Netlists
 *.net
@@ -23,3 +25,6 @@ plots/
 # Exported BoM files
 *.xml
 *.csv
+
+# Plugins
+fabrication-toolkit-options.json
